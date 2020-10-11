@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_grey_300"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+        >
+
+            <TextView
+                    android:id="@+id/tv_s_no"
+                    style="@style/report_item_head_style"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="@string/s_no"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_max="@dimen/size_50"
+                    app:layout_constraintHeight_min="@dimen/size_30"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.12"/>
+
+            <TextView
+                    android:id="@+id/tv_date_"
+                    style="@style/report_item_head_style"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="@string/latitude"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_min="@dimen/size_30"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_s_no"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintWidth_percent="0.23"/>
+
+            <TextView
+                    android:id="@+id/tv_payment_"
+                    style="@style/report_item_head_style"
+                    android:layout_width="0dp"
+
+                    android:layout_height="0dp"
+
+                    android:gravity="center"
+                    android:text="@string/longitude"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_min="@dimen/size_30"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_date_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3"/>
+
+            <TextView
+                    android:id="@+id/tv_order_id"
+                    style="@style/report_item_head_style"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="@string/time"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_min="@dimen/size_30"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_payment_"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.35"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_gravity="top"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="200dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="No scanning record available. Alarm is set for wifi scan."
+            android:layout_height="wrap_content"/>
+</FrameLayout>

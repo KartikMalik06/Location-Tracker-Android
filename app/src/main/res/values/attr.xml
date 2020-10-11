@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppEditText" >
+        <attr name="et_fa_icon_code" format="reference"/>
+        <attr name="et_icon" format="reference"/>
+        <attr name="et_fa_font_family" format="reference"/>
+        <attr name="et_text_size" format="dimension"/>
+        <attr name="et_text_color" format="color"/>
+        <attr name="et_text_hint" format="string"/>
+        <attr name="et_icon_bg" format="reference"/>
+        <attr name="android:inputType"/>
+        <attr name="android:focusable"/>
+        <attr name="android:focusableInTouchMode"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526453739445",
+    "firebase_url": "https://metal-arc-270014.firebaseio.com",
+    "project_id": "metal-arc-270014",
+    "storage_bucket": "metal-arc-270014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526453739445:android:46577285df2de38bcf93fc",
+        "android_client_info": {
+          "package_name": "com.app.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526453739445-6uscf6patqockjnfdam8231uc6gr3jcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tracker",
+            "certificate_hash": "cd2f924c650d02b55bc2178d840d7bfe8594e26c"
+          }
+        },
+        {
+          "client_id": "526453739445-4t5iaepfk80ibut733p6909b052uqc7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF14XXoq55zo7Msbh0IkJ2307Rk0YnhL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526453739445-4t5iaepfk80ibut733p6909b052uqc7h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
